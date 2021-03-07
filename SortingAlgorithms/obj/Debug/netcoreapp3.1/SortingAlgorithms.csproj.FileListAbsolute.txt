@@ -1,0 +1,13 @@
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\SortingAlgorithms\bin\Debug\netcoreapp3.1\SortingAlgorithms.exe
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\SortingAlgorithms\bin\Debug\netcoreapp3.1\SortingAlgorithms.deps.json
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\SortingAlgorithms\bin\Debug\netcoreapp3.1\SortingAlgorithms.runtimeconfig.json
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\SortingAlgorithms\bin\Debug\netcoreapp3.1\SortingAlgorithms.runtimeconfig.dev.json
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\SortingAlgorithms\bin\Debug\netcoreapp3.1\SortingAlgorithms.dll
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\SortingAlgorithms\bin\Debug\netcoreapp3.1\SortingAlgorithms.pdb
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\SortingAlgorithms\obj\Debug\netcoreapp3.1\SortingAlgorithms.csprojAssemblyReference.cache
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\SortingAlgorithms\obj\Debug\netcoreapp3.1\SortingAlgorithms.AssemblyInfoInputs.cache
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\SortingAlgorithms\obj\Debug\netcoreapp3.1\SortingAlgorithms.AssemblyInfo.cs
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\SortingAlgorithms\obj\Debug\netcoreapp3.1\SortingAlgorithms.csproj.CoreCompileInputs.cache
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\SortingAlgorithms\obj\Debug\netcoreapp3.1\SortingAlgorithms.dll
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\SortingAlgorithms\obj\Debug\netcoreapp3.1\SortingAlgorithms.pdb
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\SortingAlgorithms\obj\Debug\netcoreapp3.1\SortingAlgorithms.genruntimeconfig.cache
