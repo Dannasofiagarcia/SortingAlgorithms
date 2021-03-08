@@ -7,15 +7,49 @@ namespace SortingAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int[] data = null;
+            //Test configuracion = tipo tamaño fijo, orden ascendente, tamaño
+            Console.WriteLine("Test configuracion = tipo tamaño fijo, orden ascendente, tamaño");
 
-            int[] data = DataGenerator.Generate(0,0,90);
+            data = DataGenerator.Generate(0, 1, 90);
+
+
+            foreach (int item in data)
+            {
+                Console.WriteLine(item);
+
+            }
+
+            //_____________________________________________________________________________________________________
+
+            //Test configuracion = tipo tamaño fijo, orden descendente, tamaño
+            Console.WriteLine("Test configuracion = tipo tamaño fijo, orden descendente, tamaño");
+
+
+            data = DataGenerator.Generate(0, 1, 90);
 
 
             foreach (int item in data)
             {
                 Console.WriteLine(item);
             }
+
+            //_____________________________________________________________________________________________________
+
+
+            //Test configuracion = tipo tamaño fijo, orden aleatorio, tamaño
+            Console.WriteLine("Test configuracion = tipo tamaño fijo, orden aleatorio, tamaño");
+
+            data = DataGenerator.Generate(0, 2, 90);
+
+
+            foreach (int item in data)
+            {
+                Console.WriteLine(item);
+            }
+
+
+
         }
     }
 }
