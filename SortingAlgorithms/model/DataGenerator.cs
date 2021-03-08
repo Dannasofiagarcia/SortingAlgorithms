@@ -34,6 +34,8 @@ namespace SortingAlgorithms.model
             return data;
         }
 
+
+        //Genera arreglo con tamaño fijo, orden aleatorio
         private static int[] Conf02(int count)
         {
             Random r = new Random();
@@ -51,7 +53,7 @@ namespace SortingAlgorithms.model
 
 
 
-
+        //Genera arreglo con tamaño fijo, orden descendente
         private static int[] Conf01(int count)
         {
             int[] data = new int[count];
@@ -64,6 +66,8 @@ namespace SortingAlgorithms.model
             return data;
         }
 
+
+        //Genera arreglo con tamaño fijo, orden ascendente
         private static int[] Conf00(int count)
         {
 
