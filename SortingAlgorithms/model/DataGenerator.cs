@@ -18,6 +18,8 @@ namespace SortingAlgorithms.model
                 data = Conf00(count);
             }
 
+
+            //caso Generate(0, 1, count)
             if ((size == 0) && (order == 1))
             {
                 data = Conf01(count);
@@ -25,6 +27,7 @@ namespace SortingAlgorithms.model
             }
 
 
+            //caso Generate(0, 2, count)
             if ((size == 0) && (order == 2))
             {
                 data = Conf02(count);
