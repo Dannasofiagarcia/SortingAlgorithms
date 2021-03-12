@@ -108,7 +108,7 @@ namespace SortingAlgorithms.model
         {
              Random r = new Random();
 
-            int[] data = new int[r.Next(10^(r.Next(1,7))];
+            int[] data = new int[10 ^ r.Next((r.Next(1,7)))];
 
             for (int i = data.Length - 1; i >= 0; i--)
             {

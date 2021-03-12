@@ -21,7 +21,7 @@
             int[] vector = array;
 
             int aux;
-            for (int i = 0; i < vector.Length; i++)
+            for (int i = 1; i < vector.Length; i++)
             {
                 for (int j = vector.Length - 1; j >= i; j--)
                 {
