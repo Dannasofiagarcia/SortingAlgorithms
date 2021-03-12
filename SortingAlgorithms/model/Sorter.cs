@@ -6,6 +6,23 @@ namespace SortingAlgorithms.model
 {
     class Sorter
     {
+
+        private void bubblesort(int[] vector)
+        {
+            int aux;
+            for(int i=0; i < vector.Length; i++)
+            {
+                for(int j = vector.Length - 1; j >= i; j--)
+                {
+                    if (vector[j - 1] > vector[j])
+                    {
+                        aux = vector[j - 1];
+                        vector[j - 1] = vector[j];
+                        vector[j] = aux;
+                    }
+                }
+            }
+        }
         private void quicksort(int[] vector, int primero, int ultimo)
         {
             int i, j, central;
