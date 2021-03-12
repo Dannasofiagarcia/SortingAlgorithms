@@ -1,0 +1,7 @@
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\Sorting\bin\Debug\Sorting.exe.config
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\Sorting\bin\Debug\Sorting.exe
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\Sorting\bin\Debug\Sorting.pdb
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\Sorting\obj\Debug\Sorting.csprojAssemblyReference.cache
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\Sorting\obj\Debug\Sorting.csproj.CoreCompileInputs.cache
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\Sorting\obj\Debug\Sorting.exe
+D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\Sorting\obj\Debug\Sorting.pdb
