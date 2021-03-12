@@ -27,21 +27,21 @@ namespace SortingAlgorithms.model
             }
 
             //caso Generate(0, 3, count)
-            if ((size == 1) && (order == 3))
+            if ((size == 1) && (order == 0))
             {
-                Conf10();
+                data = Conf10();
             }
 
             //caso Generate(0, 4, count)
-            if ((size == 1) && (order == 4))
+            if ((size == 1) && (order == 1))
             {
-                Conf11();
+                data = Conf11();
             }
 
             //caso Generate(0, 5, count)
-            if ((size == 1) && (order == 5))
+            if ((size == 1) && (order == 2))
             {
-                Conf12();
+                data = Conf12();
             }
 
             return data;
@@ -98,7 +98,7 @@ namespace SortingAlgorithms.model
         {
             Random r = new Random();
 
-            int[] data = new int[10 ^ (r.Next(1, 7))];
+            int[] data = new int[(int)Math.Pow(10.0, (double)r.Next(1, 4))];
 
             for (int i = 0; i < data.Length; i++)
             {
@@ -113,14 +113,29 @@ namespace SortingAlgorithms.model
         {
             Random r = new Random();
 
-            int[] data = new int[10 ^ r.Next((r.Next(1, 7)))];
+            int alSize = (int)Math.Pow(10.0, (double)r.Next(1, 4));
 
-            for (int i = data.Length - 1; i >= 0; i--)
+            Console.WriteLine(alSize);
+
+            int[] data = new int[alSize];
+
+            for (int i = 0; i < data.Length; i++)
             {
                 data[i] = i;
             }
 
-            return data;
+            int[] data1 = new int[alSize];
+
+            int index = data.Length - 1;
+
+            for (int i = 0; i < data1.Length; i++)
+            {
+                data1[i] = data[index];
+
+                index--;
+            }
+
+            return data1;
         }
 
         //Genera arreglo con tamaño Aleatorio, orden aleatorio
@@ -128,11 +143,11 @@ namespace SortingAlgorithms.model
         {
             Random r = new Random();
 
-            int[] data = new int[r.Next(10 ^ (r.Next(1, 7)))];
+            int[] data = new int[(int)Math.Pow(10.0, (double)r.Next(1, 4))];
 
             for (int i = 0; i < data.Length; i++)
             {
-                data[i] = r.Next(0, 10000);
+                data[i] = r.Next(0, data.Length);
             }
 
             return data;
