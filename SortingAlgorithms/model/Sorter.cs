@@ -1,12 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SortingAlgorithms.model
+﻿namespace SortingAlgorithms.model
 {
-    class Sorter
+    internal class Sorter
     {
-        private void quicksort(int[] vector, int primero, int ultimo)
+        public static int[] sort(int[] array, int sortType)
+        {
+            if (sortType == 0)
+            {
+                return bubblesort(array);
+            }
+            else
+            {
+                quicksort(array, 0, array.Length - 1);
+            }
+
+            return array;
+        }
+
+        private static int[] bubblesort(int[] array)
+        {
+            int[] vector = array;
+
+            int aux;
+            for (int i = 1; i < vector.Length; i++)
+            {
+                for (int j = vector.Length - 1; j >= i; j--)
+                {
+                    if (vector[j - 1] > vector[j])
+                    {
+                        aux = vector[j - 1];
+                        vector[j - 1] = vector[j];
+                        vector[j] = aux;
+                    }
+                }
+            }
+
+            return vector;
+        }
+
+        private static void quicksort(int[] vector, int primero, int ultimo)
         {
             int i, j, central;
             double pivote;

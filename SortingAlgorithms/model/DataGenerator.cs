@@ -26,6 +26,24 @@ namespace SortingAlgorithms.model
                 data = Conf02(count);
             }
 
+            //caso Generate(0, 3, count)
+            if ((size == 1) && (order == 0))
+            {
+                data = Conf10();
+            }
+
+            //caso Generate(0, 4, count)
+            if ((size == 1) && (order == 1))
+            {
+                data = Conf11();
+            }
+
+            //caso Generate(0, 5, count)
+            if ((size == 1) && (order == 2))
+            {
+                data = Conf12();
+            }
+
             return data;
         }
 
@@ -45,11 +63,16 @@ namespace SortingAlgorithms.model
         //Genera arreglo con tamaño fijo, orden descendente
         private static int[] Conf01(int count)
         {
+            int[] temp = Conf00(count);
             int[] data = new int[count];
 
-            for (int i = data.Length - 1; i >= 0; i--)
+            int index = temp.Length - 1;
+
+            for (int i = 0; i < data.Length; i++)
             {
-                data[i] = i;
+                data[i] = temp[index];
+
+                index--;
             }
 
             return data;
@@ -65,6 +88,66 @@ namespace SortingAlgorithms.model
             for (int i = 0; i < data.Length; i++)
             {
                 data[i] = r.Next(0, count + 1);
+            }
+
+            return data;
+        }
+
+        //Genera arreglo con tamaño Aleatorio, orden ascendente
+        private static int[] Conf10()
+        {
+            Random r = new Random();
+
+            int[] data = new int[(int)Math.Pow(10.0, (double)r.Next(1, 4))];
+
+            for (int i = 0; i < data.Length; i++)
+            {
+                data[i] = i;
+            }
+
+            return data;
+        }
+
+        //Genera arreglo con tamaño Aleatorio, orden descendente
+        private static int[] Conf11()
+        {
+            Random r = new Random();
+
+            int alSize = (int)Math.Pow(10.0, (double)r.Next(1, 4));
+
+            Console.WriteLine(alSize);
+
+            int[] data = new int[alSize];
+
+            for (int i = 0; i < data.Length; i++)
+            {
+                data[i] = i;
+            }
+
+            int[] data1 = new int[alSize];
+
+            int index = data.Length - 1;
+
+            for (int i = 0; i < data1.Length; i++)
+            {
+                data1[i] = data[index];
+
+                index--;
+            }
+
+            return data1;
+        }
+
+        //Genera arreglo con tamaño Aleatorio, orden aleatorio
+        private static int[] Conf12()
+        {
+            Random r = new Random();
+
+            int[] data = new int[(int)Math.Pow(10.0, (double)r.Next(1, 4))];
+
+            for (int i = 0; i < data.Length; i++)
+            {
+                data[i] = r.Next(0, data.Length);
             }
 
             return data;
