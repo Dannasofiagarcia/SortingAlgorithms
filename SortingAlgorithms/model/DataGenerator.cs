@@ -27,21 +27,21 @@ namespace SortingAlgorithms.model
             }
 
              //caso Generate(0, 3, count)
-            if ((size == 0) && (order == 0))
+            if ((size == 1) && (order == 3))
             {
-                Conf03();
+                Conf10();
             }
 
             //caso Generate(0, 4, count)
-            if ((size == 0) && (order == 1))
+            if ((size == 1) && (order == 4))
             {
-                Conf04();
+                Conf11();
             }
 
             //caso Generate(0, 5, count)
-            if ((size == 0) && (order == 2))
+            if ((size == 1) && (order == 5))
             {
-                Conf05();
+                Conf12();
             }
 
             return data;
@@ -89,11 +89,11 @@ namespace SortingAlgorithms.model
         }
 
         //Genera arreglo con tamaño Aleatorio, orden ascendente
-        private static int[] Conf03()
+        private static int[] Conf10()
         {
              Random r = new Random();
 
-            int[] data = new int[r.Next(10^(r.Next(1,7))];
+            int[] data = new int[10^(r.Next(1,7))];
 
             for (int i = 0; i < data.Length; i++)
             {
@@ -104,7 +104,7 @@ namespace SortingAlgorithms.model
         }
 
         //Genera arreglo con tamaño Aleatorio, orden descendente
-        private static int[] Conf04()
+        private static int[] Conf11()
         {
              Random r = new Random();
 
@@ -119,7 +119,7 @@ namespace SortingAlgorithms.model
         }
 
         //Genera arreglo con tamaño Aleatorio, orden aleatorio
-        private static int[] Conf05()
+        private static int[] Conf12()
         {
             Random r = new Random();
 
