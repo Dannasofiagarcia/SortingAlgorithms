@@ -5,3 +5,10 @@ D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\Sorting\obj\Debug\Sorting.c
 D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\Sorting\obj\Debug\Sorting.csproj.CoreCompileInputs.cache
 D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\Sorting\obj\Debug\Sorting.exe
 D:\Users\Danna\Desktop\Universidad\SortingAlgorithms\Sorting\obj\Debug\Sorting.pdb
+C:\Users\Camilo\projects\SortingAlgorithms\Sorting\bin\Debug\Sorting.exe.config
+C:\Users\Camilo\projects\SortingAlgorithms\Sorting\bin\Debug\Sorting.exe
+C:\Users\Camilo\projects\SortingAlgorithms\Sorting\bin\Debug\Sorting.pdb
+C:\Users\Camilo\projects\SortingAlgorithms\Sorting\obj\Debug\Sorting.csprojAssemblyReference.cache
+C:\Users\Camilo\projects\SortingAlgorithms\Sorting\obj\Debug\Sorting.csproj.CoreCompileInputs.cache
+C:\Users\Camilo\projects\SortingAlgorithms\Sorting\obj\Debug\Sorting.exe
+C:\Users\Camilo\projects\SortingAlgorithms\Sorting\obj\Debug\Sorting.pdb
