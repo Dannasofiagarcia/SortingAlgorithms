@@ -26,7 +26,7 @@ namespace SortingAlgorithms.model
                 data = Conf02(count);
             }
 
-             //caso Generate(0, 3, count)
+            //caso Generate(0, 3, count)
             if ((size == 1) && (order == 3))
             {
                 Conf10();
@@ -63,11 +63,16 @@ namespace SortingAlgorithms.model
         //Genera arreglo con tamaño fijo, orden descendente
         private static int[] Conf01(int count)
         {
+            int[] temp = Conf00(count);
             int[] data = new int[count];
 
-            for (int i = data.Length - 1; i >= 0; i--)
+            int index = temp.Length - 1;
+
+            for (int i = 0; i < data.Length; i++)
             {
-                data[i] = i;
+                data[i] = temp[index];
+
+                index--;
             }
 
             return data;
@@ -91,9 +96,9 @@ namespace SortingAlgorithms.model
         //Genera arreglo con tamaño Aleatorio, orden ascendente
         private static int[] Conf10()
         {
-             Random r = new Random();
+            Random r = new Random();
 
-            int[] data = new int[10^(r.Next(1,7))];
+            int[] data = new int[10 ^ (r.Next(1, 7))];
 
             for (int i = 0; i < data.Length; i++)
             {
@@ -106,9 +111,9 @@ namespace SortingAlgorithms.model
         //Genera arreglo con tamaño Aleatorio, orden descendente
         private static int[] Conf11()
         {
-             Random r = new Random();
+            Random r = new Random();
 
-            int[] data = new int[10 ^ r.Next((r.Next(1,7)))];
+            int[] data = new int[10 ^ r.Next((r.Next(1, 7)))];
 
             for (int i = data.Length - 1; i >= 0; i--)
             {
@@ -123,11 +128,11 @@ namespace SortingAlgorithms.model
         {
             Random r = new Random();
 
-            int[] data = new int[r.Next(10^(r.Next(1,7)))];
+            int[] data = new int[r.Next(10 ^ (r.Next(1, 7)))];
 
             for (int i = 0; i < data.Length; i++)
             {
-                 data[i] = r.Next(0,10000);
+                data[i] = r.Next(0, 10000);
             }
 
             return data;

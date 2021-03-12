@@ -1,5 +1,6 @@
 ﻿using SortingAlgorithms.model;
 using System;
+using System.Collections.Generic;
 
 namespace SortingAlgorithms
 {
@@ -13,9 +14,11 @@ namespace SortingAlgorithms
 
         private static void Main(string[] args)
         {
-            int opt = 0, size, order = 0, count = 0, algType;
+            int opt = 0, size, order = 0, count = 0, algType, timesToTest;
 
             int[] testArray = null;
+
+            int[] resultTest = null;
 
             Console.WriteLine("AMBIENTE DE EXPERIMENTACION - ALGORITMOS DE ORDENAMIENTO", System.Environment.NewLine);
 
@@ -54,6 +57,7 @@ namespace SortingAlgorithms
                     Console.WriteLine("3. Aleatorio");
 
                     opt = Int32.Parse(Console.ReadLine());
+
 
                     if (opt == 1)
                     {
@@ -99,6 +103,10 @@ namespace SortingAlgorithms
 
                     Console.WriteLine();
 
+                    Console.WriteLine("Número de repeticiones (minimo 100): ");
+
+                    timesToTest = Int32.Parse(Console.ReadLine());
+
                     Console.WriteLine("AMBIENTE EXPERIMENTAL PREPARADO");
 
                     Console.WriteLine("1. Ejecutar experimento");
@@ -106,17 +114,35 @@ namespace SortingAlgorithms
 
                     opt = Int32.Parse(Console.ReadLine());
 
+                    List<double> times = new List<double>();
                     if (opt == 1)
                     {
-                        TimeSpan stop;
-                        TimeSpan start = new TimeSpan(DateTime.Now.Ticks);
 
-                        //ORDENAMIENTO
-                        testArray = Sorter.sort(testArray, algType);
+                        for (int i = 0; i < timesToTest; i++)
+                        {
+                            TimeSpan stop;
+                            TimeSpan start = new TimeSpan(DateTime.Now.Ticks);
 
-                        stop = new TimeSpan(DateTime.Now.Ticks);
+                            //ORDENAMIENTO
+                            resultTest = Sorter.sort(testArray, algType);
 
-                        double time = stop.Subtract(start).TotalMilliseconds;
+                            stop = new TimeSpan(DateTime.Now.Ticks);
+
+                            double time = stop.Subtract(start).TotalMilliseconds;
+
+                            times.Add(time);
+                        }
+
+
+                        double globalTime = 0;
+
+                        foreach (double item in times)
+                        {
+                            globalTime = globalTime + item;
+                        }
+
+                        globalTime = globalTime / (double)timesToTest;
+                       
                         Console.WriteLine();
 
                         Console.WriteLine("Experimento finalizado!", System.Environment.NewLine);
@@ -125,7 +151,9 @@ namespace SortingAlgorithms
                         Console.WriteLine("ESTADISTICAS:");
                         Console.WriteLine();
 
-                        Console.WriteLine($"Tiempo transcurrido: {time}");
+                        Console.WriteLine($"Número de repeticiones del experimento: {timesToTest}");
+
+                        Console.WriteLine($"Tiempo transcurrido promedio: {globalTime}");
                         Console.WriteLine($"Tamaño del arreglo: {testArray.Length}");
 
                         String typeOrder = "";
