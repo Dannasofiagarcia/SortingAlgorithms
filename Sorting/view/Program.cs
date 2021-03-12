@@ -9,6 +9,7 @@ namespace SortingAlgorithms
         public static void menu()
         {
             Console.WriteLine("1. Realizar un experimento.");
+
             Console.WriteLine("0. Salir del programa");
         }
 
