@@ -2,7 +2,7 @@
 
 namespace SortingAlgorithms.model
 {
-    internal class DataGenerator
+    public class DataGenerator
     {
         public static int[] Generate(int size, int order, int count)
         {
