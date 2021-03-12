@@ -1,6 +1,6 @@
 ﻿namespace SortingAlgorithms.model
 {
-    internal class Sorter
+    public class Sorter
     {
         public static int[] sort(int[] array, int sortType)
         {
